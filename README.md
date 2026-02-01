@@ -31,6 +31,16 @@ docker compose up -d
 
 Access the frontend at `http://localhost:5173` and the backend docs at `http://localhost:8000/docs`.
 
+## 📸 Screenshots
+
+| Admin Dashboard | Items Management |
+|-----------------|------------------|
+| ![Admin Dashboard](img/dashboard-admin.png) | ![Items](img/dashboard-items.png) |
+
+| Dark Mode | API Documentation |
+|-----------|-------------------|
+| ![Dark Mode](img/dashboard-dark.png) | ![API Docs](img/api-docs.png) |
+
 ## 📂 Project Structure
 
 - `backend/`: FastAPI application code.
