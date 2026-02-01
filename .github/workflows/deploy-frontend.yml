@@ -1,0 +1,54 @@
+name: Deploy Frontend
+
+on:
+  push:
+    branches: ["master", "main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install Dependencies
+        run: bun install
+
+      - name: Build
+        run: bun run --filter frontend build
+        env:
+          # Use empty base if using custom domain, or /<repo-name>/ if using default gh-pages
+          # We'll default to typical GH pages behavior by setting base in vite config if strictly needed,
+          # but here we rely on Vite's default or manual configuration.
+          # For now, we assume user might need to adjust base in vite.config.ts
+          CI: true
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './frontend/dist'
+
+      - name: Deploy to GitHub
+        id: deployment
+        uses: actions/deploy-pages@v4
