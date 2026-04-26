@@ -1,55 +1,63 @@
-# My Full Stack Project
+# Modern FastAPI App
 
-This is a modern full-stack web application built with FastAPI (Backend) and React (Frontend).
+A modern full-stack web application built with **FastAPI** on the backend and **React** on the frontend. The project combines typed API development, a contemporary admin-style UI, Docker-based local setup, and a clean developer experience for full-stack iteration.
 
-## 🚀 Tech Stack
+## Tech Stack
 
-- **Backend:** FastAPI, PostgreSQL, SQLModel, Pydantic
-- **Frontend:** React, Vite, TypeScript, Tailwind CSS, TanStack Router
-- **Database:** PostgreSQL
-- **DevOps:** Docker Compose
+- Backend: FastAPI, PostgreSQL, SQLModel, Pydantic
+- Frontend: React, Vite, TypeScript, Tailwind CSS, TanStack Router
+- Database: PostgreSQL
+- DevOps: Docker Compose
 
-## 🛠️ Getting Started
+## Getting Started
 
-To get the project running locally, follow these steps.
+To run the project locally:
 
 ### Prerequisites
 
-- Docker & Docker Compose
-- Node.js (for frontend local dev without Docker)
-- Python 3.10+ (for backend local dev without Docker)
+- Docker and Docker Compose
+- Node.js
+- Python 3.10+
 
-### Running with Docker (Recommended)
-
-1. Clone the repository.
-2. Create `.env` file from the example (if applicable) or use provided scripts.
-3. Run the development environment:
+### Recommended Local Run
 
 ```bash
 docker compose up -d
 ```
 
-Access the frontend at `http://localhost:5173` and the backend docs at `http://localhost:8000/docs`.
+After startup:
 
-## 📸 Screenshots
+- frontend: `http://localhost:5173`
+- backend docs: `http://localhost:8000/docs`
+
+## Screenshots
 
 | Admin Dashboard | Items Management |
-|-----------------|------------------|
-| ![Admin Dashboard](img/dashboard-admin.png) | ![Items](img/dashboard-items.png) |
+| --- | --- |
+| ![Admin Dashboard](img/dashboard-admin.png) | ![Items Management](img/dashboard-items.png) |
 
 | Dark Mode | API Documentation |
-|-----------|-------------------|
-| ![Dark Mode](img/dashboard-dark.png) | ![API Docs](img/api-docs.png) |
+| --- | --- |
+| ![Dark Mode](img/dashboard-dark.png) | ![API Documentation](img/api-docs.png) |
 
-## 📂 Project Structure
+## Project Structure
 
-- `backend/`: FastAPI application code.
-- `frontend/`: React application code.
-- `scripts/`: Helper scripts for development and deployment.
+- `backend/`: FastAPI application code
+- `frontend/`: React application code
+- `scripts/`: helper scripts for development and deployment
 
-## 📄 License
+## Why This Project Stands Out
+
+- clean separation between backend and frontend concerns
+- typed Python API development with FastAPI
+- modern React UI setup with Vite and TypeScript
+- dashboard-style interface backed by real API endpoints
+- Docker-first local development workflow
+
+## License
 
 This project is licensed under the MIT License.
 
 ---
-*Based on [Full Stack FastAPI Template](https://github.com/fastapi/full-stack-fastapi-template)*
+
+Based on the [Full Stack FastAPI Template](https://github.com/fastapi/full-stack-fastapi-template).
