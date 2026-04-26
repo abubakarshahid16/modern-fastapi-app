@@ -2,6 +2,10 @@
 
 A modern full-stack web application built with **FastAPI** on the backend and **React** on the frontend. The project combines typed API development, a contemporary admin-style UI, Docker-based local setup, and a clean developer experience for full-stack iteration.
 
+## Live Showcase
+
+- GitHub Pages project showcase: <https://abubakarshahid16.github.io/modern-fastapi-app/>
+
 ## Tech Stack
 
 - Backend: FastAPI, PostgreSQL, SQLModel, Pydantic

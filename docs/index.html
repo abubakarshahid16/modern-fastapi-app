@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern FastAPI App Showcase</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #f5f7fb; color: #1f2b3a; }
+    .hero {
+      background: linear-gradient(135deg, #111827, #0f766e 55%, #14b8a6);
+      color: white;
+      padding: 74px 24px 54px;
+      text-align: center;
+    }
+    .hero h1 { margin: 0 0 14px; font-size: 48px; }
+    .hero p { max-width: 920px; margin: 0 auto 26px; font-size: 18px; line-height: 1.65; color: #d8f5f1; }
+    .cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn { display: inline-block; text-decoration: none; padding: 14px 22px; border-radius: 999px; font-weight: 700; }
+    .btn-primary { background: #99f6e4; color: #0f172a; }
+    .btn-secondary { background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.18); }
+    .container { max-width: 1180px; margin: 0 auto; padding: 32px 24px 64px; }
+    .section { background: white; border-radius: 24px; box-shadow: 0 14px 32px rgba(20,32,52,0.08); padding: 28px; margin-bottom: 26px; }
+    .section h2 { margin-top: 0; font-size: 30px; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+    .card { background: #f8fbff; border: 1px solid #e5edf7; border-radius: 18px; overflow: hidden; }
+    .card img { width: 100%; display: block; }
+    .card .copy { padding: 18px; }
+    .card h3 { margin: 0 0 10px; font-size: 24px; }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 18px; }
+    .stat { background: #f8fbff; border: 1px solid #e5edf7; border-radius: 16px; padding: 18px; }
+    .stat strong { display: block; font-size: 26px; margin-bottom: 8px; color: #0f766e; }
+    .list { padding-left: 18px; line-height: 1.7; }
+    @media (max-width: 900px) {
+      .grid, .stats { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 38px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Modern FastAPI App</h1>
+    <p>A full-stack FastAPI and React template positioned as a polished engineering project with Docker-based local setup, typed API design, and admin-style frontend screens.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="showcase/dashboard-admin.png">Open Dashboard Screenshot</a>
+      <a class="btn btn-secondary" href="https://github.com/abubakarshahid16/modern-fastapi-app">View Repository</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>Project Highlights</h2>
+      <div class="stats">
+        <div class="stat"><strong>FastAPI</strong>Typed backend with modern Python API structure</div>
+        <div class="stat"><strong>React</strong>Dashboard-style frontend with Vite and TypeScript</div>
+        <div class="stat"><strong>Docker</strong>Local-first environment for fast setup</div>
+        <div class="stat"><strong>Portfolio Ready</strong>Clean screenshots and strong repo presentation</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Interface Screens</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="showcase/dashboard-admin.png" alt="Admin dashboard">
+          <div class="copy">
+            <h3>Admin Dashboard</h3>
+            <p>The dashboard view shows the application positioned as a modern admin-style full-stack product rather than a minimal template.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="showcase/dashboard-items.png" alt="Items management">
+          <div class="copy">
+            <h3>Items Management</h3>
+            <p>Management views help make the repository feel more concrete and product-oriented for full-stack review.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="showcase/api-docs.png" alt="API docs">
+          <div class="copy">
+            <h3>API Documentation</h3>
+            <p>FastAPI’s generated docs reinforce the backend credibility of the project for API-focused roles.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="showcase/dashboard-dark.png" alt="Dark mode">
+          <div class="copy">
+            <h3>Dark Mode UI</h3>
+            <p>Extra interface polish helps this repo read as a strong engineering showcase rather than just a starter codebase.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Why It Works As a Flagship Repo</h2>
+      <ul class="list">
+        <li>Strong backend and frontend split with modern tooling</li>
+        <li>Easy-to-understand business-style UI proof</li>
+        <li>Solid first impression for full-stack and backend recruiters</li>
+        <li>Clear setup and Docker-based local workflow</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
