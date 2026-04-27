@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/hero-banner.svg" alt="Modern FastAPI app hero" width="100%" />
+</p>
+
 # Modern FastAPI App
 
 A modern full-stack web application built with **FastAPI** on the backend and **React** on the frontend. The project combines typed API development, a contemporary admin-style UI, Docker-based local setup, and a clean developer experience for full-stack iteration.
@@ -12,6 +16,10 @@ A modern full-stack web application built with **FastAPI** on the backend and **
 - Frontend: React, Vite, TypeScript, Tailwind CSS, TanStack Router
 - Database: PostgreSQL
 - DevOps: Docker Compose
+
+## Architecture Snapshot
+
+![Architecture snapshot](docs/architecture-overview.svg)
 
 ## Getting Started
 
@@ -38,11 +46,11 @@ After startup:
 
 | Admin Dashboard | Items Management |
 | --- | --- |
-| ![Admin Dashboard](img/dashboard-admin.png) | ![Items Management](img/dashboard-items.png) |
+| ![Admin Dashboard](docs/showcase/dashboard-admin.png) | ![Items Management](docs/showcase/dashboard-items.png) |
 
 | Dark Mode | API Documentation |
 | --- | --- |
-| ![Dark Mode](img/dashboard-dark.png) | ![API Documentation](img/api-docs.png) |
+| ![Dark Mode](docs/showcase/dashboard-dark.png) | ![API Documentation](docs/showcase/api-docs.png) |
 
 ## Project Structure
 
